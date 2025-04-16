@@ -2,9 +2,13 @@ version: 0.0
 os: linux	    
 hooks:	
   BeforeInstall:	 
-    - location: scripts/install.sh   
+    - location: scripts/before-install.sh   
       timeout: 300	     
       runas: root	  
+  Install:	 
+    - location: scripts/install.sh   
+      timeout: 300	     
+      runas: ubuntu	 
   ApplicationStart:
     - location: scripts/application-start.sh	    
       timeout: 300	     
