@@ -1,5 +1,5 @@
 #!/bin/bash
-# Download and install nvm:
+# Download and install nvm and NodeJS:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 
 # in lieu of restarting the shell
